@@ -104,6 +104,39 @@
         <li class="skills__item">Git y GitHub profesional</li>
       </ul>
     </section>
+    <section class="contact" id="contacto">
+      <h2 class="contact__title">Contacto</h2>
+
+      <form class="contact__form">
+        <label for="name" class="contact__label">Nombre</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          class="contact__input"
+          required
+        />
+
+        <label for="email" class="contact__label">Correo</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="contact__input"
+          required
+        />
+
+        <label for="message" class="contact__label">Mensaje</label>
+        <textarea
+          id="message"
+          name="message"
+          class="contact__input contact__textarea"
+          required
+        ></textarea>
+
+        <button type="submit" class="contact__button">Enviar</button>
+      </form>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
