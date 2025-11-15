@@ -1,0 +1,136 @@
+:root {
+  /* 🎯 Colores base */
+  --color-fondo: #f5f5f5;
+  --color-texto: #333;
+  --color-secundario: #666;
+
+  /* 🎯 Color de acento (marca personal) */
+  --color-acento: #445;
+
+  /* 🎯 Blancos y sombras */
+  --color-blanco: #ffffff;
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* 🎯 Tipografías */
+  --fuente-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* 🎯 Tamaños de texto */
+  --fs-h1: 3rem;
+  --fs-h2: 2.3rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+
+  /* 🎯 Espaciados */
+  --spacing: 1rem;
+  --radius: 10px;
+
+  /* 🎯 Transiciones */
+  --transition: 0.25s ease;
+}
+
+/* ----------------------------
+        HEADER / NAVBAR
+----------------------------- */
+
+.header {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.nav__link:hover {
+  color: var(--color-acento);
+}
+
+/* ----------------------------
+       MENÚ RESPONSIVE
+----------------------------- */
+
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__icon,
+.nav__icon::before,
+.nav__icon::after {
+  width: 25px;
+  height: 3px;
+  background: var(--color-texto);
+  display: block;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.nav__icon::before,
+.nav__icon::after {
+  content: "";
+  position: relative;
+}
+
+.nav__icon::before {
+  top: -7px;
+}
+
+.nav__icon::after {
+  top: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 860px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__list {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 70px);
+    background: #fff;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav__list.active {
+    right: 0;
+  }
+}
