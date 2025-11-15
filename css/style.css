@@ -235,3 +235,35 @@
     text-align: center;
   }
 }
+
+/* ----------------------------
+     MI ENFOQUE
+----------------------------- */
+.focus {
+  padding: 5rem 2rem;
+}
+
+.focus__title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  color: var(--color-texto);
+}
+
+.focus__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.focus__card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease;
+}
+
+.focus__card:hover {
+  transform: translateY(-5px);
+}
