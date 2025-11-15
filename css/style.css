@@ -267,3 +267,33 @@
 .focus__card:hover {
   transform: translateY(-5px);
 }
+
+/* ----------------------------
+        SKILLS
+----------------------------- */
+.skills {
+  padding: 5rem 2rem;
+  background: var(--color-fondo);
+}
+
+.skills__title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills__item {
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.7rem;
+  font-weight: 600;
+}
