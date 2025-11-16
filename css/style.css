@@ -342,3 +342,80 @@
 .contact__button:hover {
   opacity: 0.9;
 }
+
+.footer {
+  background: var(--color-fondo);
+  border-top: 1px solid var(--color-secundario);
+  padding: 2.5rem 0;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Marca / Nombre */
+.footer__brand {
+  font-size: 1rem;
+  color: var(--color-texto);
+  font-weight: 600;
+}
+
+/* Lista del footer */
+.footer__list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer__list a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.footer__list a:hover {
+  color: var(--color-acento);
+}
+
+/* Íconos */
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__social a {
+  font-size: 1.4rem;
+  color: var(--color-texto);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer__social a:hover {
+  color: var(--color-acento);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer__list {
+    gap: 1.2rem;
+  }
+
+  .footer__brand {
+    font-size: 0.95rem;
+  }
+}
+.footer__copy {
+  color: var(--color-texto);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}

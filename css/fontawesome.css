@@ -1,0 +1,77 @@
+/* ─────────────────────────────────────────────
+   Font Awesome 6 Solid + Brands (CDN Load)
+   Archivo generado para uso directo
+   ───────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff")
+      format("woff");
+}
+
+/* Base para todos los íconos */
+.fa,
+.fas,
+.fab {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Solid Icons */
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* Brand Icons */
+.fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+/* Ejemplo de iconos incluidos (puedes agregar más si quieres) */
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-user:before {
+  content: "\f007";
+}
+
+/* Clase para dar tamaño común */
+.fa-lg {
+  font-size: 1.25em;
+}
+
+/* Hover opcional */
+.fa:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
